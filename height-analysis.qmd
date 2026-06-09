@@ -1,6 +1,4 @@
----
-title: "w04_Task3"
----
+# World Height Analysis
 
 ## Load in Packages
 ```{r, message="FALSE", warning="FALSE"}
