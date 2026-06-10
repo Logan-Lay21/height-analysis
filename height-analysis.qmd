@@ -9,6 +9,10 @@ library(tidyverse) # filter, select, rename, etc.
 
 ```
 
+## Project Goal
+
+Given the five data sets that contain human height over a variety of centuries, can we conclude that humans are getting taller over the years?
+
 ## Load in Data
 ```{r, message="FALSE", warning="FALSE", results="hide"}
 
@@ -168,7 +172,7 @@ theme(axis.text.x = element_text(angle = 25, hjust = 1),
 
 ## Conclusion
 
-The previous task used aggregate world height data and told a fairly clean story -- humans have grown roughly 2.2 inches taller on average over the last 150 years, a modest but consistent upward trend visible across many countries and regions. The individual-level data in this task loosely supports that same story. Following the median lines in the violin plot left to right, there is a subtle upward drift from the German military datasets clustered around 67-68 inches toward the American datasets nudging 69-70 inches. However, these datasets are not a controlled comparison. Three studies draw from German and Bavarian military and prison populations, which had minimum height requirements that cut off the lower tail of the true distribution, and then the comparison jumps to American survey respondents entirely. Any visible difference could reflect geography, diet, or genetics just as easily as the passage of time.
+The individual-level data in this project loosely supports that humans are getting taller over past centuries. Following the median lines in the violin plot left to right, there is a subtle upward drift from the German military datasets clustered around 67-68 inches toward the American datasets nudging 69-70 inches. However, these datasets are not a controlled comparison. Three studies draw from German and Bavarian military and prison populations, which had minimum height requirements that cut off the lower tail of the true distribution, and then the comparison jumps to American survey respondents entirely. Any visible difference could reflect geography, diet, or genetics just as easily as the passage of time.
 
 The graph also reveals some honest limitations worth noting. The SE German Soldiers violin has a jagged, spiky shape suggesting thin or unevenly distributed data rather than a clean population sample. The Wisconsin violin is unusually wide and tall at the top, almost certainly a consequence of its mixed gender population pulling the distribution in two directions at once. BLS, assigned a single birth year of 1950, reflects cross-sectional variation rather than any temporal trend at all. Taking both tasks together, the aggregate world data makes a more convincing case for humans getting taller over time than this individual-level data does on its own. The trend appears real, but it is modest enough that selection bias and population differences across these five studies can easily obscure it.
 
