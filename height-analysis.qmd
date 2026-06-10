@@ -11,7 +11,7 @@ library(tidyverse) # filter, select, rename, etc.
 
 ## Project Goal
 
-Given the five data sets that contain human height over a variety of centuries, can we conclude that humans are getting taller over the years?
+Given the five data sets that contain human height over a variety of decades, can we conclude that humans are getting taller over the years?
 
 ## Load in Data
 ```{r, message="FALSE", warning="FALSE", results="hide"}
